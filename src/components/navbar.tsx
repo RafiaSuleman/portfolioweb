@@ -25,22 +25,21 @@ const Navbar = () => {
   ];
   const PathName = usePathname();
   return (
-    <div>
+    <nav className="flex gap-8">
       {Links.map((link, index) => (
        <>
           <Link
+          key={index}
             href={link.path}
             className={`${
               link.path === PathName &&
-              "text-[#4985B9] border border-b-2 border-[#4985B9]"
-            } hover:text-[#4985B9]`}
-            key={index}
-          >
+              "text-[#01FCA4] border border-b-2 border-[#01FCA4]"
+            } capatilize font-medium hover:text-[#01FCA4] transition-all`}>
             {link.name}
           </Link>
           </>
       ))}
-    </div>
+    </nav>
   );
 };
 

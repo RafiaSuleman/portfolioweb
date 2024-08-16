@@ -1,25 +1,26 @@
 import React from "react";
 import Link from "next/link";
 import Navbar from "./navbar";
+import { Button } from "./ui/button";
 const Header = () => {
   return (
-    <div>
-      <nav className=" py-7 bg-[#134B70] text-white flex justify-between items-center ">
-        <Link href="/">
-          <h1 className="md:mx-[50px] mx-[20px] lg:mx-[70px] text-2xl font-bold">
-            Rafia
-          </h1>
+    <header className="py-8 xl:py-12 text-white bg-[#1C1B22]">
+    <div className=" container mx-auto flex justify-between items-center">
+      <Link href="/">
+        <h1 className=" text-4xl font-semibold">
+          Luke <span className="text-[#01FCA4]">.</span>
+        </h1>
+      </Link>
+
+      <div className="hidden xl:flex gap-8 items-center">
+        <Navbar />
+        <Link href="/contact">
+          <Button>Hire me</Button>
         </Link>
-      
-      <div className="hidden xl:flex gap-8 items-center mr-[40px]">
-         <Navbar/> 
-        <Link href='/contact'>Hire me</Link>
       </div>
-      <div className="xl:hidden mr-[40px]">
-        Mobile Nav
-      </div>
-      </nav>
+      <div className="xl:hidden">Mobile Nav</div>
     </div>
+  </header>
   );
 };
 
