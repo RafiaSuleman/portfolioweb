@@ -22,7 +22,7 @@ const config = {
     },
     extend: {
       fontFamily:{
-        primary: ['var(--font-Georama)']
+        primary: ['var(--font-JetBrainsMono)']
       },
       colors: {
         border: "hsl(var(--border))",
@@ -30,9 +30,10 @@ const config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+        primary: "#1c1c22",
+        accent:{
+          DEFAULT:'#00ff99',
+          hover:'#00e187',
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -45,10 +46,6 @@ const config = {
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",

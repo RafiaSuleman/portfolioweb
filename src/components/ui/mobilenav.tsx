@@ -10,7 +10,7 @@ import {
     SheetTitle,
     SheetTrigger,
   } from "@/components/ui/sheet"
-import CiMenuFries from 'react-icons/ci'
+import {CiMenuFries} from 'react-icons/ci'
 
 const links = [
     {
@@ -39,18 +39,18 @@ const MobileNav = () => {
   return (
     <Sheet>
         <SheetTrigger className="flex justify-center items-center">
-           {/* <CiMenuFries className="text-[32px] text-[#01FCA4]"/> */}
+           <CiMenuFries className="text-[32px] text-accent"/>
         </SheetTrigger>
         <SheetContent className='flex flex-col'>
-            <div className='mt-32 mb-40 text-center text-2xl'>
+            <div className='mb-[60px] text-center text-2xl'>
                 <Link href='/'>
-                <h1 className='text-4xl font-semibold'></h1>
+                <h1 className='text-4xl font-semibold'>Luke <span className='text-accent'>.</span></h1>
                 </Link>
-            </div>
-            <nav >
+            </div> 
+            <nav  className='flex flex-col justify-center items-center gap-8'>
                 {links.map((link,index)=>{
                     return(
-                        <Link href={link.path} key={index} className={`${link.path===pathname &&" text-[#01FCA4] border-b-2 border-[#01FCA4]"} "text-xl capitalize hover:text-[]`}>
+                        <Link href={link.path} key={index} className={`${link.path===pathname &&" text-accent border-b-2 border-accent"} "text-xl capitalize hover:text-accent-hover transition-all`}>
                             {link.name}
                         </Link>
                     );

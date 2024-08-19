@@ -33,7 +33,7 @@ const Navbar = () => {
             href={link.path}
             className={`${
               link.path === PathName &&
-              "text-[#01FCA4] border border-b-2 border-[#01FCA4]"
+              "text-[#01FCA4] border-b-2 border-[#01FCA4]"
             } capatilize font-medium hover:text-[#01FCA4] transition-all`}>
             {link.name}
           </Link>

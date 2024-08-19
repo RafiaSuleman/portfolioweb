@@ -5,11 +5,11 @@ import { Button } from "./ui/button";
 import MobileNav from "./ui/mobilenav";
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12 text-white bg-[#1C1B22]">
+    <header className="py-8 xl:py-12 text-white z-50">
     <div className=" container mx-auto flex justify-between items-center">
       <Link href="/">
         <h1 className=" text-4xl font-semibold">
-          Luke <span className="text-[#01FCA4]">.</span>
+          Luke <span className="text-accent">.</span>
         </h1>
       </Link>
 
@@ -19,7 +19,7 @@ const Header = () => {
           <Button>Hire me</Button>
         </Link>
       </div>
-      <div className="xl:hidden">mobilenav{/* <MobileNav/> */}</div>
+      <div className="xl:hidden"><MobileNav/></div>
     </div>
   </header>
   );
