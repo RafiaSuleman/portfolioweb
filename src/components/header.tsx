@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Navbar from "./navbar";
 import { Button } from "./ui/button";
+import MobileNav from "./ui/mobilenav";
 const Header = () => {
   return (
     <header className="py-8 xl:py-12 text-white bg-[#1C1B22]">
@@ -18,7 +19,7 @@ const Header = () => {
           <Button>Hire me</Button>
         </Link>
       </div>
-      <div className="xl:hidden">Mobile Nav</div>
+      <div className="xl:hidden">mobilenav{/* <MobileNav/> */}</div>
     </div>
   </header>
   );
