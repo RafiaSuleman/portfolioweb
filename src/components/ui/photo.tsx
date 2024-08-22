@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Repeat } from "lucide-react";
 const Photo = () => {
   return (
-    <div className="w-full h-full relative">
+    <div className="h-full relative">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
@@ -50,7 +50,8 @@ const Photo = () => {
             }}
             transition={{
               duration: 20,
-              Repeat: Infinity,
+              repeat: Infinity,
+
               repeatType:'reverse',
             }}
           />

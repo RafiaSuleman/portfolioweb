@@ -7,8 +7,8 @@ import Photo from "@/components/ui/photo";
 import Stats from "@/components/ui/stats";
 export default function Home() {
   return (
-    <section className=" h-screen">
-      <div className="container mx-auto h-full">
+    <section className="h-screen">
+      <div className="container mx-auto h-full mb-[20px]">
         <div className="flex flex-col xl:flex-row item-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none" >
             <span className="text-xl">Web Developer</span>
@@ -29,12 +29,13 @@ export default function Home() {
           </div>
           </div>
           </div>
-          <div className="order-1 xl:order-none mb-8 xl:mb-0 flex justify-center items-center ">
+          <div className="h-full w-full xl:order-none mb-8 xl:mb-0 flex justify-center items-center ">
               <Photo/>
           </div>
         </div>
+        <Stats/>
       </div>
-      <Stats/>
+      
     </section>
   );
 }
