@@ -12,7 +12,7 @@ export default function Home() {
         <div className="flex flex-col xl:flex-row item-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none" >
             <span className="text-xl">Web Developer</span>
-            <h1 className="h1 mb-6">Hello I'm  <br /> <span className="text-[#01FCA4]">Rafia Khurshid</span>
+            <h1 className="h1 mb-6">Hello I am  <br /> <span className="text-[#01FCA4]">Rafia Khurshid</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80 flex justify-center items-center ">with in-depth knowledge of SEO best practices, I specialize in
           creating sites that are not only visually appealing but also rank well
