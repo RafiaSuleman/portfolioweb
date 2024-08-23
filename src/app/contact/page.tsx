@@ -1,4 +1,6 @@
-import React from "react";
+'use client'
+import React from 'react';
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -12,9 +14,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
-import { title } from "process";
-import { Description } from "@radix-ui/react-dialog";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 const info = [
   {
     icon: <FaPhoneAlt />,
@@ -45,7 +45,7 @@ const Contact = () => {
     >
       <div className="container mx-auto">
           <div className="flex flex-col xl:flex-row gap-[30px]">
-            <div className="xl:h-[54%] order-2 xl:order-none">
+            <div className="xl:w-[54%] order-2 xl:order-none">
               <form action="" className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl ">
                   <h3 className="text-4xl text-accent"  >Let's work Together</h3>
                   <p className="text-white/60">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -88,8 +88,8 @@ const Contact = () => {
                         <div className="text-[28px]">{item.icon}</div>
                       </div>
                       <div>
-                        <div> <p>{item.title}</p>
-                        <h3>{item.description}</h3>
+                        <div className="text-white/60"> <p>{item.title}</p>
+                        <h3 className="text-xl">{item.description}</h3>
                         </div>
                       </div>
                     </li>
