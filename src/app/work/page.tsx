@@ -12,41 +12,51 @@ import {
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
-import { Description } from "@radix-ui/react-dialog";
 import WorkSliderBtn from "@/components/ui/workSliderBtn";
 
 const projects = [
   {
     num: "01",
-    catagories: "frontend",
-    title: "Project 1",
+    catagories: "E-Commerce",
+    title: "CaseCobra",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, neque.",
-    stack: [{ name: "Html5" }, { name: "Css3" }, { name: "JavaScript" }],
-    image: "/assets/work/thumb1.png",
-    live: " ",
+    stack: [{ name: "Tailwindcss" }, { name: "Nextjs" }, { name: "TypeScript" }, { name: "Prisma" }],
+    image: "/assets/work/casecobra.png",
+    live: "https://casecobra-2wik.vercel.app/",
     github: "",
   },
   {
     num: "02",
-    catagories: "frontend",
-    title: "Project 2",
+    catagories: "Frontend",
+    title: "Serene BeautyPorlor",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, neque.",
-    stack: [{ name: "Html5" }, { name: "Css3" }, { name: "JavaScript" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
+    stack: [{ name: "Tailwindcss" }, { name: "Nextjs" }, { name: "TypeScript" }],
+    image: "/assets/work/beautyporlor.png",
+    live: "https://beautypolorapp.vercel.app/",
     github: "",
   },
   {
     num: "03",
-    catagories: "frontend",
-    title: "Project 3",
+    catagories: "E-Commerce",
+    title: "nextCommerce",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, neque.",
-    stack: [{ name: "Html5" }, { name: "Css3" }, { name: "JavaScript" }],
-    image: "/assets/work/thumb3.png",
-    live: "",
+    stack: [{ name: "Tailwindcss" }, { name: "nextjs" }, { name: "typeScript" },{ name: "Sanity" }],
+    image: "/assets/work/nextcommerce.png",
+    live: "https://sunnygarments.vercel.app/",
+    github: "",
+  },
+  {
+    num: "04",
+    catagories: "Frontend",
+    title: "Qariapp",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, neque.",
+    stack: [{ name: "Tailwindcss" }, { name: "nextjs" }, { name: "typeScript" }],
+    image: "/assets/work/qariapp.png",
+    live: "https://quranic-guide.vercel.app/",
     github: "",
   },
 ];
@@ -122,24 +132,24 @@ const Work = () => {
 
             </div>
           </div>
-          <div className="mb-[20px] w-full xl:w-[50%]">
-            <Swiper spaceBetween={30} slidesPerView={1} className="xl:h-[520px] mb-[12]"
+          <div className="mb-[20px] w-full xl:w-[50%] ">
+        
+            <Swiper spaceBetween={30} slidesPerView={1} className="xl:h-[410px] mb-[10]"
             onSlideChange={handleSlideChange}>
               {projects.map((project,index)=>{
                 return(
                   <SwiperSlide key={index} className="w-full">
-                      <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                        <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>                      
-                        <div className="relative w-full h-full">
-                          <Image src={project.image} fill className="object-cover" alt=""/>
+                      <div className="h-[300px] flex justify-center items-center bg-pink-50/20">
+                         <div className="absolute top-0 bottom-0 w-full h-full z-10 "></div>                     
+                         <div className="w-full h-full ">
+                          <Image src={project.image} height={1700} width={1200} className="object-cover" alt=""/>
                         </div>                      
                       </div>
                   </SwiperSlide>
                 )
               })}
-
               {/* Slider Button */}
-              <WorkSliderBtn containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none " btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"/>
+              <WorkSliderBtn containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"/>
             </Swiper>
           </div>
         </div>
