@@ -33,10 +33,11 @@ const projects = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, neque.",
     stack: [{ name: "Tailwindcss" }, { name: "Nextjs" }, { name: "TypeScript" }],
-    image: "/assets/work/beautyporlor.png",
+    image: "/assets/work/beautyporlor.jpg",
     live: "https://beautypolorapp.vercel.app/",
     github: "",
   },
+ 
   {
     num: "03",
     catagories: "E-Commerce",
@@ -44,7 +45,7 @@ const projects = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, neque.",
     stack: [{ name: "Tailwindcss" }, { name: "nextjs" }, { name: "typeScript" },{ name: "Sanity" }],
-    image: "/assets/work/nextcommerce.png",
+    image: "/assets/work/ecommerce.jpg",
     live: "https://sunnygarments.vercel.app/",
     github: "",
   },
@@ -55,8 +56,19 @@ const projects = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, neque.",
     stack: [{ name: "Tailwindcss" }, { name: "nextjs" }, { name: "typeScript" }],
-    image: "/assets/work/qariapp.png",
+    image: "/assets/work/qariapp.jpg",
     live: "https://quranic-guide.vercel.app/",
+    github: "",
+  },
+  {
+    num: "05",
+    catagories: "MDX Blog",
+    title: "TechHives",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, neque.",
+    stack: [{ name: "Tailwindcss" }, { name: "Nextjs" }, { name: "TypeScript" }, { name: "MDX" }],
+    image: "/assets/work/blogimage.jpg",
+    live: "https://beautypolorapp.vercel.app/",
     github: "",
   },
 ];
@@ -133,19 +145,23 @@ const Work = () => {
             </div>
           </div>
           <div className="mb-[20px] w-full xl:w-[50%] ">
-        
-            <Swiper spaceBetween={30} slidesPerView={1} className="xl:h-[410px] mb-[10]"
+      
+            <Swiper spaceBetween={30} slidesPerView={1} className="xl:h-[440px] mb-[10]"
             onSlideChange={handleSlideChange}>
               {projects.map((project,index)=>{
-                return(
-                  <SwiperSlide key={index} className="w-full">
-                      <div className="h-[300px] flex justify-center items-center bg-pink-50/20">
-                         <div className="absolute top-0 bottom-0 w-full h-full z-10 "></div>                     
-                         <div className="w-full h-full ">
-                          <Image src={project.image} height={1700} width={1200} className="object-cover" alt=""/>
-                        </div>                      
+                return (
+                  <SwiperSlide key={index} className="w-full bg-blue-500
+                   ">
+                      <div className="h-[400px] flex flex-col items-center justify-center  bg-green-500">
+                         {/* <div className="absolute w-full h-full z-10 "></div>                      */}
+                         
+                          <Image src={project.image} 
+                           height={500}
+                           width={700}
+                           className="object-cover"  
+                           alt=""/>               
                       </div>
-                  </SwiperSlide>
+                  </SwiperSlide> 
                 )
               })}
               {/* Slider Button */}
