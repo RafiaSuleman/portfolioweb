@@ -9,29 +9,8 @@ const services = [
     num: "01",
     title: "Web Developement",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, suscipit.",
-    href: "",
-  },
-  {
-    num: "02",
-    title: "UI/UX Design",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, suscipit.",
-    href: "",
-  },
-  {
-    num: "03",
-    title: "Logo Designer",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, suscipit.",
-    href: "",
-  },
-  {
-    num: "04",
-    title: "SEO",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, suscipit.",
-    href: "",
+      "Crafting responsive, user-friendly websites with modern technologies for seamless experiences",
+    href: "http://localhost:3000/work",
   },
 ];
 const Services = () => {

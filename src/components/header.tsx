@@ -9,14 +9,14 @@ const Header = () => {
     <div className=" container mx-auto flex justify-between items-center">
       <Link href="/">
         <h1 className=" text-4xl font-semibold">
-          Rafia<span className="text-accent">.</span>
+          Rafia<span className="text-[#EB70F1]">.</span>
         </h1>
       </Link>
 
       <div className="hidden xl:flex gap-8 items-center ">
         <Navbar />
         <Link href="/contact">
-          <Button className="flex items-center">Hire me</Button>
+          <Button className="flex items-center text-white ">Hire me</Button>
         </Link>
       </div>
       <div className="xl:hidden"><MobileNav/></div>

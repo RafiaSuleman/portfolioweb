@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Repeat } from "lucide-react";
 const Photo = () => {
   return (
-    <div className="h-full relative">
+    <div className="h-full relative flex justify-start items-start">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
@@ -22,16 +22,16 @@ const Photo = () => {
           className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
         >
           <Image
-            src="/Images/photo.png"
+            src="/Images/photo2.png"
             priority
             quality={100}
             fill
-            className="object-contain"
+            className="object-contain "
             alt=""
           />
         </motion.div>
         <motion.svg
-          className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]" fill="transparent"
+          className="w-[300px] xl:w-[506px] h-[300px] xl:h-[550px]" fill="transparent"
           viewBox="0 0 506 506"
           xmlns="http://w3.org/2000/svg"
         >
@@ -39,7 +39,7 @@ const Photo = () => {
             cx="253"
             cy="253"
             r="250"
-            stroke="#00ff99"
+            stroke="#EB70F1"
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"

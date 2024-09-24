@@ -146,21 +146,22 @@ const Work = () => {
           </div>
           <div className="mb-[20px] w-full xl:w-[50%] ">
       
-            <Swiper spaceBetween={30} slidesPerView={1} className="xl:h-[440px] mb-[10]"
+          <Swiper spaceBetween={30} slidesPerView={1} className="xl:h-[410px] mb-[10]"
             onSlideChange={handleSlideChange}>
               {projects.map((project,index)=>{
                 return (
-                  <SwiperSlide key={index} className="w-full bg-blue-500
+                  <SwiperSlide key={index} className="w-full flex flex-col justify-center items-center
                    ">
-                      <div className="h-[400px] flex flex-col items-center justify-center  bg-green-500">
-                         {/* <div className="absolute w-full h-full z-10 "></div>                      */}
-                         
-                          <Image src={project.image} 
+                      <div className="h-[300px] flex justify-center items-center">
+                         <div className="absolute w-full h-full top-0 bottom-0 z-10"></div>                     
+                         <div className="w-full h-full bg-pink-500">                       
+                             <Image src={project.image} 
                            height={500}
                            width={700}
                            className="object-cover"  
                            alt=""/>               
-                      </div>
+                           </div>      
+                        </div>
                   </SwiperSlide> 
                 )
               })}

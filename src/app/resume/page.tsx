@@ -26,11 +26,11 @@ const about = {
     },
     {
       fildName: "Phone: ",
-      fieldValue: "012 345 678",
+      fieldValue: "+92 323 4533030",
     },
     {
       fildName: "Experience: ",
-      fieldValue: "12+ Years",
+      fieldValue: "1 Year",
     },
     {
       fildName: "Skype: ",
@@ -102,24 +102,19 @@ const education = {
     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, ex.",
   items: [
     {
-      institute: "Online Course Platform ",
-      degree: "Full stack Development bootcamp ",
-      duration: "2023",
+      institute: "Online Course from Webkin Solutions",
+      degree: "Full stack Web Development ",
+      duration: "2024",
     },
     {
-      institute: "codeAccadmy ",
-      degree: "Front-End Track",
-      duration: "summer-2021",
+      institute: "Online Course ",
+      degree: "React Web Development ",
+      duration: "2024",
     },
     {
-      institute: "online Course",
-      degree: "programing course",
-      duration: "2020-2021",
-    },
-    {
-      institute: "Tech Institute ",
-      degree: "Certified web developer",
-      duration: "2020-2021",
+      institute: "LCWU ",
+      degree: "BSCS",
+      duration: "2013-2017",
     },
   ],
 };
@@ -152,10 +147,7 @@ const skills = {
       icon: <SiTailwindcss />,
       name: "tailwind.css",
     },
-    {
-      icon: <FaNodeJs />,
-      name: "Node Js",
-    },
+   
   ],
 };
 
