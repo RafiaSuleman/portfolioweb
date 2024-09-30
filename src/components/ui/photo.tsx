@@ -2,38 +2,24 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Repeat } from "lucide-react";
+
 const Photo = () => {
   return (
-    <div className="h-full relative flex justify-start items-start">
+    <div className="h-full w-full flex justify-center items-center relative">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
           transition: { delay: 2, duration: 0.4, ease: "easeIn" },
         }}
+        className="relative"
       >
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
-          }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
-        >
-          <Image
-            src="/Images/photo2.png"
-            priority
-            quality={100}
-            fill
-            className="object-contain "
-            alt=""
-          />
-        </motion.div>
+        {/* SVG Circle */}
         <motion.svg
-          className="w-[300px] xl:w-[506px] h-[300px] xl:h-[550px]" fill="transparent"
+          className="w-[300px] xl:w-[506px] h-[300px] xl:h-[550px]"
+          fill="transparent"
           viewBox="0 0 506 506"
-          xmlns="http://w3.org/2000/svg"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <motion.circle
             cx="253"
@@ -51,11 +37,31 @@ const Photo = () => {
             transition={{
               duration: 20,
               repeat: Infinity,
-
-              repeatType:'reverse',
+              repeatType: "reverse",
             }}
           />
         </motion.svg>
+
+        {/* Image Centered in Circle */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
+          }}
+          className="absolute inset-0 flex justify-center items-center"
+        >
+          <div className="relative w-[250px] h-[250px] xl:w-[400px] xl:h-[400px] mix-blend-lighten">
+            <Image
+              src="/Images/webdeveloper3.png"
+              priority
+              quality={100}
+              fill
+              className="object-contain"
+              alt="Web Developer"
+            />
+          </div>
+        </motion.div>
       </motion.div>
     </div>
   );
