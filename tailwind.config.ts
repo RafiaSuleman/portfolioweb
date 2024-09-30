@@ -32,8 +32,8 @@ const config = {
         foreground: "hsl(var(--foreground))",
         primary: "#1c1c22",
         accent:{
-          DEFAULT:'#EB70F1',
-          hover:'#00e187',
+          DEFAULT:'#eb70f1',
+          hover:'#f996ff',
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",

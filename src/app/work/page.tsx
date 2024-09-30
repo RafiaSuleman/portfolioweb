@@ -20,11 +20,11 @@ const projects = [
     catagories: "E-Commerce",
     title: "CaseCobra",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, neque.",
+      "Customrize your phonecase",
     stack: [{ name: "Tailwindcss" }, { name: "Nextjs" }, { name: "TypeScript" }, { name: "Prisma" }],
     image: "/assets/work/casecobra.png",
     live: "https://casecobra-2wik.vercel.app/",
-    github: "",
+   
   },
   {
     num: "02",
@@ -35,7 +35,7 @@ const projects = [
     stack: [{ name: "Tailwindcss" }, { name: "Nextjs" }, { name: "TypeScript" }],
     image: "/assets/work/beautyporlor.jpg",
     live: "https://beautypolorapp.vercel.app/",
-    github: "",
+   
   },
  
   {
@@ -47,7 +47,7 @@ const projects = [
     stack: [{ name: "Tailwindcss" }, { name: "nextjs" }, { name: "typeScript" },{ name: "Sanity" }],
     image: "/assets/work/ecommerce.jpg",
     live: "https://sunnygarments.vercel.app/",
-    github: "",
+   
   },
   {
     num: "04",
@@ -58,7 +58,7 @@ const projects = [
     stack: [{ name: "Tailwindcss" }, { name: "nextjs" }, { name: "typeScript" }],
     image: "/assets/work/qariapp.jpg",
     live: "https://quranic-guide.vercel.app/",
-    github: "",
+   
   },
   {
     num: "05",
@@ -67,9 +67,9 @@ const projects = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, neque.",
     stack: [{ name: "Tailwindcss" }, { name: "Nextjs" }, { name: "TypeScript" }, { name: "MDX" }],
-    image: "/assets/work/blogimage.jpg",
-    live: "https://beautypolorapp.vercel.app/",
-    github: "",
+    image: "/assets/work/blogsection1.jpg",
+    live: "",
+   
   },
 ];
 
@@ -128,18 +128,7 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                <Link href={project.github}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full justify-center items-center group">
-                        <BsGithub className="text-white text-3xl hover:text-accent" />
-                        <TooltipContent>
-                          <p>Github reposetory</p>
-                        </TooltipContent>
-                      </TooltipTrigger>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+               
               </div>
 
             </div>
@@ -154,7 +143,7 @@ const Work = () => {
                    ">
                       <div className="h-[300px] flex justify-center items-center">
                          <div className="absolute w-full h-full top-0 bottom-0 z-10"></div>                     
-                         <div className="w-full h-full bg-pink-500">                       
+                         <div className="w-full h-full">                       
                              <Image src={project.image} 
                            height={500}
                            width={700}
