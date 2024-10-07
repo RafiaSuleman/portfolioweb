@@ -30,7 +30,8 @@ const config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: "#1c1c22",
+       primary:'#2f876c',
+        color:'#ED8609',
         accent:{
           DEFAULT:'#eb70f1',
           hover:'#f996ff',

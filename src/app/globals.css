@@ -65,7 +65,7 @@
     @apply border-border;
   }
   body {
-    @apply font-primary bg-primary text-white leading-loose;
+    @apply font-primary text-white leading-loose;
   }
   .h1 {
     @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold
@@ -76,7 +76,7 @@
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold
   }
   .text-outline-hover {
-    -webkit-text-stroke: 1px #EB70F1
+    -webkit-text-stroke: 1px #F7AB4E
   }
   .text-outline {
     -webkit-text-stroke: 1px #ffffff

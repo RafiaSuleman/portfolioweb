@@ -6,6 +6,7 @@ import Header from "@/components/header";
 const inter = Inter({ subsets: ["latin"] });
 import PageTransition from '../components/ui/PageTransition'
 import StairTransition from '../components/ui/StairTransition'
+import { cn } from "@/lib/utils";
 
 const JetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -23,11 +24,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={JetBrainsMono.variable}>
+      <body className={JetBrainsMono.variable} >
+        <main className={cn(
+            " bg-[url('/Images/blur.png')] bg-cover ",
+          
+          )} >
         <Header/>
          <StairTransition/> 
         <PageTransition> {children}</PageTransition>
        
+        </main>
+      
       </body>
     </html>
   );

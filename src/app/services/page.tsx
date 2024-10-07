@@ -28,11 +28,11 @@ const Services = () => {
                       text-transparent hover:text-outline-hover transition-all duration-500">
                         {service.num}
                       </div>
-                      <Link href={service.href} className=" w-[70px] h-[70px] rounded-full bg-white hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45">
+                      <Link href={service.href} className=" w-[70px] h-[70px] rounded-full bg-white hover:bg-color transition-all duration-500 flex justify-center items-center hover:-rotate-45">
                         <BsArrowDownRight className="text-primary text-3xl"/>
                       </Link>
                     </div>
-                    <h2 className="text-[42px] font-bold leading-none text-white hover:text-accent transition-all duration-500">{service.title}</h2>
+                    <h2 className="text-[42px] font-bold leading-none text-white hover:text-color transition-all duration-500">{service.title}</h2>
                     <p className="text-white/50">{service.description}</p>
                     <div className="border-b border-white/20 w-full"></div>
                 </div>

@@ -180,11 +180,11 @@ const Resume = () => {
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experiance.items.map((item,index)=>{
-                      return <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
-                          <span className="text-accent">{item.duration}</span>
+                      return <li key={index} className="bg-[#063E2A] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                          <span className="text-color">{item.duration}</span>
                           <h3 className="text-xl max-w-[260px] min-h-[60] text-center lg:text-left">{item.position}</h3>
                           <div className="flex-items-center gap-3">
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                            <span className="w-[6px] h-[6px] rounded-full bg-color"></span>
                             <p className="text-white/60">{item.company}</p>
                           </div>
                       </li>
@@ -202,11 +202,11 @@ const Resume = () => {
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item,index)=>{
-                      return <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
-                          <span className="text-accent">{item.degree}</span>
+                      return <li key={index} className="bg-[#063E2A] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                          <span className="text-color">{item.degree}</span>
                           <h3 className="text-xl max-w-[260px] min-h-[60] text-center lg:text-left">{item.institute}</h3>
                           <div className="flex-items-center gap-3">
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                            <span className="w-[6px] h-[6px] rounded-full bg-color"></span>
                             <p className="text-white/60">{item.duration}</p>
                           </div>
                       </li>
@@ -226,8 +226,8 @@ const Resume = () => {
                       return <li key={index} className="">
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                          <div className="text-accent text-6xl hover:text-accent transition-all duration-300">{item.icon}</div>
+                            <TooltipTrigger className="w-full h-[150px] bg-[#063E2A] rounded-xl flex justify-center items-center group">
+                          <div className="text-white text-6xl hover:text-color transition-all duration-300">{item.icon}</div>
                           </TooltipTrigger>
                           <TooltipContent>
                           <p className="capitalize">{item.name}</p>

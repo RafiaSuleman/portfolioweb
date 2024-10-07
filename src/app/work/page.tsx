@@ -71,6 +71,17 @@ const projects = [
     live: "",
    
   },
+  {
+    num: "06",
+    catagories: "Frontend",
+    title: "Quranic Guide - qariapp",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, neque.",
+    stack: [{ name: "Tailwindcss" }, { name: "Nextjs" }, { name: "TypeScript" }],
+    image: "/assets/work/quranicguide.jpg",
+    live: "",
+   
+  },
 ];
 
 
@@ -94,11 +105,11 @@ const Work = () => {
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               {/* project cnum */}
-              <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+              <div className="text-8xl leading-none font-extrabold text-transparent text-outline text-outline-hover">
                 {project.num}
               </div>
               {/* project catagory */}
-              <h2 className="text-[30px] font-bold leading-none text-white hover:text-accent transition-all duration-500 capitalize">
+              <h2 className="text-[30px] font-bold leading-none text-white hover:text-color transition-all duration-500 capitalize">
                 {project.catagories} project
               </h2>
               {/* description */}
@@ -107,7 +118,7 @@ const Work = () => {
               <ul className="flex gap-1">
                 {project.stack.map((item, index) => {
                   return (
-                    <li key={index} className="text-xl text-accent">
+                    <li key={index} className="text-xl text-[#ED8609]">
                       {item.name}
                       {index !== project.stack.length - 1 && ","}
                     </li>
@@ -120,7 +131,7 @@ const Work = () => {
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl hover:text-accent" />
+                        <BsArrowUpRight className="text-white text-3xl hover:text-color" />
                         <TooltipContent>
                           <p>Live Project</p>
                         </TooltipContent>
@@ -155,7 +166,7 @@ const Work = () => {
                 )
               })}
               {/* Slider Button */}
-              <WorkSliderBtn containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"/>
+              <WorkSliderBtn containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles="bg-color hover:bg-[#F7AB4E] text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"/>
             </Swiper>
           </div>
         </div>

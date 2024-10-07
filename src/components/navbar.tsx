@@ -37,8 +37,8 @@ const Navbar = () => {
             href={link.path}
             className={`${
               link.path === PathName &&
-              "text-[#EB70F1] border-b-2 border-[#EB70F1]"
-            } capatilize font-medium hover:text-[#EB70F1] transition-all`}>
+              " border-b-2 border-color bg-color px-1 rounded-md"
+            } capatilize font-medium transition-all`}>
             {link.name}
           </Link>
           </>
