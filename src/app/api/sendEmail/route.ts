@@ -3,9 +3,9 @@ import nodemailer from "nodemailer";
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, message,phoneNo ,lastname} = await req.json();
+    const { name, email, message,phoneNo ,lastname ,service} = await req.json();
 
-    if (!name ||!lastname || !email || !message ||!phoneNo) {
+    if (!name ||!lastname || !email || !message ||!phoneNo || !service) {
       return NextResponse.json(
         { error: "Name, email, and message are required" },
         { status: 400 }
@@ -33,7 +33,9 @@ export async function POST(req: NextRequest) {
         <p style="font-size: 16px; color: #666;"><strong>Name:</strong> ${name}${lastname}</p>
         <p style="font-size: 16px; color: #666;"><strong>Email:</strong> ${email}</p>
         <p style="font-size: 16px; color: #666;"><strong>Phone Number:</strong> ${phoneNo}</p>
-        <p style="font-size: 16px; color: #666;"><strong>Message:</strong> ${message}</p>
+       
+        <p style="font-size: 16px; color: #666;"><strong>Service:</strong> ${service}</p>
+         <p style="font-size: 16px; color: #666;"><strong>Message:</strong> ${message}</p>
       </div>
       <footer style="background-color: #f5f5f5; padding: 10px; text-align: center;">
         <p style="font-size: 14px; color: #999; margin: 0;">&copy; ${new Date().getFullYear()} RafiaPortfolio. All rights reserved.</p>

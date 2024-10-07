@@ -2,18 +2,13 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import path from "path";
-import { text } from "stream/consumers";
 const Navbar = () => {
   const Links = [
     {
       name: "Home",
       path: "/",
     },
-    {
-      name: "Services",
-      path: "/services",
-    },
+   
     {
       name: "Resume",
       path: "/resume",
@@ -22,10 +17,7 @@ const Navbar = () => {
       name: "Work",
       path: "/work",
     },
-    {
-      name: "Contact",
-      path: "/contact",
-    },
+   
   ];
   const PathName = usePathname();
   return (
