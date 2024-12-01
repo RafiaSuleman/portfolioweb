@@ -31,7 +31,7 @@ const projects = [
     catagories: "Frontend",
     title: "Serene BeautyPorlor",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, neque.",
+      "Elegant beauty salon app: seamless booking, services, and user-friendly design.",
     stack: [{ name: "Tailwindcss" }, { name: "Nextjs" }, { name: "TypeScript" }],
     image: "/assets/work/beautyporlor.jpg",
     live: "https://beautypolorapp.vercel.app/",
@@ -43,7 +43,7 @@ const projects = [
     catagories: "E-Commerce",
     title: "nextCommerce",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, neque.",
+      "Stylish garments website: clean design, responsive layout, seamless navigation",
     stack: [{ name: "Tailwindcss" }, { name: "nextjs" }, { name: "typeScript" },{ name: "Sanity" }],
     image: "/assets/work/ecommerce.jpg",
     live: "https://sunnygarments.vercel.app/",
@@ -51,35 +51,34 @@ const projects = [
   },
   {
     num: "04",
-    catagories: "Frontend",
-    title: "Qariapp",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, neque.",
-    stack: [{ name: "Tailwindcss" }, { name: "nextjs" }, { name: "typeScript" }],
-    image: "/assets/work/qariapp.jpg",
-    live: "https://quranic-guide.vercel.app/",
-   
-  },
-  {
-    num: "05",
     catagories: "MDX Blog",
     title: "TechHives",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, neque.",
+      "Modern blog platform: responsive design, dynamic posts, and seamless UX.",
     stack: [{ name: "Tailwindcss" }, { name: "Nextjs" }, { name: "TypeScript" }, { name: "MDX" }],
     image: "/assets/work/blogsection1.jpg",
-    live: "",
-   
+    live: "https://final-blog-pink.vercel.app/",
+    
+  },
+  {
+    num: "05",
+    catagories: "Frontend",
+    title: "Qariapp",
+    description:
+      "Comprehensive Quranic app: intuitive interface, guidance, and easy navigation.",
+    stack: [{ name: "Tailwindcss" }, { name: "nextjs" }, { name: "typeScript" }],
+    image: "/assets/work/qariapp.jpg",
+    live: "https://quranic-guide.vercel.app/",
   },
   {
     num: "06",
     catagories: "Frontend",
     title: "Quranic Guide - qariapp",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, neque.",
+      "Making Quranic learning accessible to all, right from home.",
     stack: [{ name: "Tailwindcss" }, { name: "Nextjs" }, { name: "TypeScript" }],
     image: "/assets/work/quranicguide.jpg",
-    live: "",
+    live: "https://quranic-guide-qariapp-26cewznsq-rafia-khurshids-projects.vercel.app/about",
    
   },
 ];
